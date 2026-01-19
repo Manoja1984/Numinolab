@@ -63,3 +63,22 @@ docker-compose up --build
 | 400 | Book already checked out |
 | 422 | Invalid input payload |
 | 404 | Resource not found |
+
+neighborhood-library-ui/
+├── pages/
+│   ├── index.tsx        # Home page
+│   ├── books.tsx        # List & borrow books
+│   └── members.tsx     # Members page (stub)
+│
+├── components/          # Ready for extension
+├── services/
+│   └── api.ts           # Backend API calls
+│
+├── package.json
+└── next.config.js
+run UI
+----------------
+cd neighborhood-library-ui
+npm install
+npm run dev
+
